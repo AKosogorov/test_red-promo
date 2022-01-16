@@ -1,0 +1,28 @@
+include ../mixins/mixins
+
+footer.footer#footer
+  .footer__top
+    .container.footer__container.footer__container--top.row
+      .footer__nav-box.col-md-4.col-xl-3
+        a.footer__link.footer__link--page(href="/") Главная
+        +nav()
+      .footer__info.col-md-4.col-xl-6
+        ul.footer__info-list
+          li.footer__info-item
+            a.footer__link.footer__info-link(href="#") Способы оплаты
+          li.footer__info-item
+            a.footer__link.footer__info-link(href="#") Доставка
+          li.footer__info-item
+            a.footer__link.footer__info-link(href="#") Возврат товара
+          li.footer__info-item
+            a.footer__link.footer__info-link(href="#") Политика конфиденциальности
+        +btn('Оформить заказ')(class="btn btn-sm btn-success footer__btn")
+      .footer__contacts#contacts.col-md-4.col-xl-3
+        +tel('8 (347) 222 22 22', '83472222222')(class="footer__tel")
+        adress.adress.footer__adress.d-block г. Уфа, ул. Пробная, д 132
+        include ./social
+  .footer__down
+    .container.footer__container.footer__container--down
+      span.copyrights 2020 site.ru
+      a.footer__link.footer__link--create Создание сайта&nbsp;&mdash;
+        span.footer__text-bold Red Promo

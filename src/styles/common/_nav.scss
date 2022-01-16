@@ -1,0 +1,12 @@
+.nav {
+
+  &__list {
+    width: 100%;
+  }
+
+  &__link {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
+}

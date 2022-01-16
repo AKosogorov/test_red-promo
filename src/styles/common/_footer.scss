@@ -1,0 +1,135 @@
+.footer {
+
+  text-align: center;
+
+  &__top {
+    padding: 32px 0;
+    background-color: $colorPersianGreen20;
+  }
+
+  &__container {
+
+    &--top {
+      margin: 0 auto;
+    }
+
+    &--down {
+      padding: 0;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    color: rgba(0, 0, 0, .6);
+
+    @include linkUI;
+
+    &--page {
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    &--create {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: $colorWhite;
+      background-color: $colorDarkCyan;
+      cursor: pointer;
+
+      &:focus {
+        color: $colorBlack;
+      }
+
+      &:hover {
+        color: $colorBlack;
+      }
+
+      &:active {
+        color: $colorWhite;
+      }
+    }
+  }
+
+  .nav {
+    margin-bottom: 14px;
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 14.5px;
+      }
+    }
+
+    &__link {
+      color: rgba(0, 0, 0, .6);
+      @include linkUI;
+    }
+  }
+
+  &__info {
+    margin-bottom: 34px;
+
+    &-list {
+      margin-bottom: 29px
+    }
+
+    &-item:not(:last-child) {
+      margin-bottom: 14.5px;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: $colorPersianGreen;
+    transition: color .1s ease-in-out, background-color .3s ease-in-out;
+
+    &:focus {
+      background-color: $colorDarkCyan;
+    }
+
+    &:hover {
+      background-color: $colorDarkCyan;
+    }
+
+    &:active {
+      color: $colorBlack;
+    }
+  }
+
+  &__tel {
+    display: block;
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+
+  &__adress {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, .6);
+  }
+
+  &__text-bold {
+    margin-left: 2px;
+    font-weight: 600;
+  }
+}
+
+.copyrights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: $colorWhite;
+  background-color: $colorPersianGreen;
+}

@@ -1,0 +1,26 @@
+section.section.about#about
+  .container
+    h2.heading.about__heading О нас
+    .row.about__content
+      .about__text-box.col-md-12.col-xl-6
+        .row.about__row-text
+          .about__text-group.col-md-6
+            p.about__text Примерно 60-70% того, что вы&nbsp;ежедневно выбрасываете в&nbsp;мусорное ведро, можно сдать на&nbsp;переработку. Зачем это делать?
+            p.about__text.about__text--green Чтобы избавить планету от&nbsp;ковра мусора, который с&nbsp;каждым годом становится все больше.
+          .about__text-group.col-md-6
+            p.about__text Все что вам нужно: перестать выбрасывать вместе с&nbsp;остальным мусором пластик, бумагу, конмервы, аллюминиевые банки, полиэтиленовые мешки и&nbsp;связаться с&nbsp;нами. Мы&nbsp;приедем, заберем ваш мусор и&nbsp;отправим его на&nbsp;переработку.
+            p.about__text.about__text--green Единственное условие&nbsp;&mdash; мусор должен быть чистым и&nbsp;отсортированным.
+      .col-md-12.col-xl-6
+        .swiper.about__swiper.col-md-12.col-xl-6
+          - var n = 0;
+          .swiper-wrapper
+            while n < 4
+              - n++ ;
+              .swiper-slide
+                picture
+                  source(srcset="images/img__about--slide-1-m.webp" media="(max-width: 767px)")
+                  source(srcset="images/img__about--slide-1-t.webp" media="(max-width: 1200px)")
+                  img(src="images/img__about--slide-1-d.webp" alt="Картина")
+          .swiper-pagination
+          .swiper-button-prev
+          .swiper-button-next

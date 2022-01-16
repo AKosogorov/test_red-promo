@@ -1,0 +1,59 @@
+.about {
+  padding: 32px 0 26px;
+
+  &__heading {
+    margin-bottom: 18px;
+  }
+
+  &__text-box {
+    margin-bottom: 27px;
+  }
+
+  &__text-group:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    line-height: 20px;
+
+    &--green {
+      margin-top: 13px;
+      font-weight: 700;
+      color: $colorPersianGreen;
+    }
+  }
+}
+
+.swiper {
+  height: 235px;
+
+  &-wrapper {
+    height: 198px;
+  }
+
+  &-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-button-prev,
+  &-button-next {
+    display: none;
+  }
+
+  &-pagination {
+    position: absolute;
+    bottom: 0 !important;
+
+    &-bullet {
+    border: 1px solid $colorPersianGreen;
+    margin: 0 8px !important;
+    background-color: $colorWhite;
+
+      &-active {
+        background-color: $colorPersianGreen;
+      }
+    }
+  }
+}
+

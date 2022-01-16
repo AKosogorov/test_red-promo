@@ -1,0 +1,99 @@
+@import '_fonts';
+@import '_variables';
+@import '_mixins';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  background-color: $colorWhite;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+svg {
+  transition: fill .1s ease-in-out;
+}
+
+path {
+  transition: fill .1s ease-in-out;
+}
+
+.f-sz0 {
+  font-size: 0;
+  line-height: 0;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.tel {
+  color: $colorBlack;
+  transition: color .2s ease-in-out;
+
+  @include linkUI;
+}
+
+.btn {
+  font-weight: 600;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.btn-warning {
+  border: none;
+  transition: color .1s ease-in-out, background-color .3s ease-in-out;
+
+  &:hover {
+    background-color: $colorLuminousOrange;
+  }
+
+  &:active {
+    color: $colorWhite;
+  }
+}
+
+.nav-bg {
+  position: fixed;
+  z-index: 1;
+  top: 124px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(0,0,0,.4);
+}
+
+.nav-bg--active {
+  display: block;
+}

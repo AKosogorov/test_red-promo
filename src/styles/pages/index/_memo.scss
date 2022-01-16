@@ -1,0 +1,35 @@
+.memo {
+  background-color: $colorDarkCyan;
+  color: $colorWhite;
+
+  &__container {
+    margin: 0 auto;
+    padding: 32px 12px 25px;
+    background:
+      url('images/bg__memo--up.svg') calc(100% - 12px) 0 / 150px 75px no-repeat,
+      url('images/bg__memo--down.svg') calc(100% - 12px) 100% / 60px 30px no-repeat,
+  }
+
+  &__heading {
+    margin-bottom: 34px;
+    padding: 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    padding-left: 28px;
+    min-height: 20px;
+    line-height: 16px;
+    background-image: url('images/icon__trash.svg');
+    background-repeat: no-repeat;
+  }
+
+
+  &__text--bold {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,30 @@
+include ../mixins/mixins
+
+header.header#header
+  .header__top
+    .container.header__container.header__container--top
+      +logo(class="header__logo")
+      form.search.f-sz-0
+        input.search__input(type="text" placeholder="Поиск")
+        button.search__btn.f-sz0(type="submit")
+          +searchIcon()
+        button.search__btn-close.f-sz-0
+          +closeIcon(class="search__icon")
+      +tel('8 (347) 222 22 22', '83472222222')(class="header__tel header__tel--top d-none d-xl-inline-block")
+      include ./social
+      .basket.header__basket-box
+        a.basket__link(href="#").f-sz0
+          +basketIcon()
+          span.basket__text.d-none.d-xl-inline-block Корзина
+          span.basket__counter 2
+          span.basket__cost.d-none.d-md-inline-block 1,737 &#8381;
+      .cabinet.header__cabinet
+        a.cabinet__link.f-sz0(href="#")
+          +cabinetIcon()
+          span.cabinet__text.d-none.d-md-inline-block Войти
+  .header__down
+    .container.header__container.header__container--down
+      +nav(true)
+      +tel('8 (347) 222 22 22', '83472222222')(class="header__tel header__tel--down d-xl-none")
+      +btn('Оформить заказ')(class="btn-sm btn-success header__btn")
+    .nav-bg

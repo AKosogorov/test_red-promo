@@ -1,0 +1,30 @@
+@mixin transitionColor {
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+@mixin linkUI {
+  &:focus {
+    color: $colorSeaGreen;
+  }
+
+  &:hover {
+    color: $colorSeaGreen;
+  }
+
+  &:active {
+    color: $colorDarkCyan;
+  }
+}
+
+@mixin svgUI {
+  &:focus svg {
+    fill: $colorSeaGreen;
+  }
+  &:hover svg {
+    fill: $colorSeaGreen;
+  }
+
+  &:active svg {
+    fill: $colorDarkCyan;
+  }
+}
